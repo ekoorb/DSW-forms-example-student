@@ -14,9 +14,9 @@ def render_response():
     #The info in args is visible in the url for the pages being requested (ex.../response?color=blue)
     if color == 'lavender':
         reply = "That's my favorite color, too"
-        else:
+    else:
             reply = "My favorite color is lavender."
-        return render_template('response.html', response = reply)
+            return render_template('response.html', response = reply)
     
 if __name__=="__main__":
     app.run(debug=False, port=54321)
